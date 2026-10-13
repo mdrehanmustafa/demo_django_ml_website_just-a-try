@@ -1,0 +1,3 @@
+{% load static %}<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{% block title %}ModelLab{% endblock %}</title><link rel="stylesheet" href="{% static 'predictor/style.css' %}"></head>
+<body><nav class="nav wrap"><a class="brand" href="{% url 'home' %}"><span class="brand-mark">M</span> ModelLab</a><div class="nav-links"><a href="{% url 'home' %}">Overview</a><a class="nav-cta" href="{% url 'predict' %}">Try demo ↗</a></div></nav><main>{% block content %}{% endblock %}</main><footer class="footer wrap"><span>ModelLab · Django ML starter</span><span>Built with Python + Django</span></footer></body></html>
